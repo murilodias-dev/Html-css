@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vecktor</title>
+</head>
+<body>
+    <h1> Sistema de Monitoramento de Velocidade.</h1> 
+   
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h 
+    <input type="button" value= "Verificar" onclick="calcular()">  
+    <div id="res"> 
+    
+<script>
+     
+
+  function calcular(){
+        
+    var txtv = window.document.getElementById('txtvel')  
+        
+    var res = window.document.querySelector('div#res') 
+        
+    var speed  = Number(txtv.value)  
+       
+    res.innerHTML = `<p>Sua velocidade atual é de <strong>${speed}</strong>Km/h</p>`
+        if (speed > 60) {
+           res.innerHTML += `<p>Você foi <Strong>MULTADO</Strong> sua multa e de ${speed - 60}.</p>` 
+
+        }
+        res.innerHTML += `<p>Se beber não dirija.<p>`
+         
+    }
+
+</script>
+
+</body>
+</html>

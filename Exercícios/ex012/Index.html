@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos Sonoros</title>
+</head>
+<body>
+    
+    <!-- Elemento de áudio fora das divs -->
+    <audio id="som1" src="midia/airwooshunderwater.mp3"></audio>
+    <audio id="som2" src="midia/autobulletsflybyshort.mp3"></audio>
+    <audio id="som3" src="midia/babycrycough.mp3"></audio> 
+    <audio id="som4" src="midia/beebuzz.mp3"></audio>
+    <audio id="som5" src="midia/beeperemergencycall.mp3"></audio>
+    <audio id="som6" src="midia/beepshort.mp3"></audio>  
+    <audio id="som7" src="midia/bigexplosioncutoff.mp3"></audio> 
+    <audio id="som8" src="midia/bowlingstrike.mp3"></audio>
+    <audio id="som9" src="midia/musclecardistantrevshort.mp3"></audio> 
+    <audio id="som10" src="midia/ratchetingtrailerwench.mp3"></audio>  
+    <audio id="som11" src="midia/volleyballspikes.mp3"></audio> 
+    
+
+    <div id="ConjDiv">
+        <div id="divazia" class="circle"  data-audio="som1"></div>
+        <div id="divazia1" class="circle" data-audio="som2"></div>
+        <div id="divazia2" class="circle" data-audio="som3"></div>
+        <div id="divazia3" class="circle" data-audio="som4"></div>
+        <div id="divazia4" class="circle" data-audio="som5"></div>
+        <div id="divazia5" class="circle" data-audio="som6"></div>
+        <div id="divazia6" class="circle" data-audio="som7"></div>
+        <div id="divazia7" class="circle" data-audio="som8"></div>
+        <div id="divazia8" class="circle" data-audio="som9"></div> 
+        <div id="divazia9" class="circle" data-audio="som10"></div>
+        <div id="divazia10" class="circle" data-audio="som11"></div>
+    </div> 
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+
+        #ConjDiv {
+            display: flex;
+            gap: 30px; 
+            padding: 50px;  
+            justify-content: center;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 49%);
+            border: 0.5px solid greenyellow; 
+            cursor: pointer;
+        }
+
+        #divazia    { border-color: rgb(255, 47, 47); }
+        #divazia1   { border-color: rgb(255, 165, 47); }
+        #divazia2   { border-color: rgb(252, 255, 47); }
+        #divazia3   { border-color: greenyellow; }
+        #divazia4   { border-color: rgb(54, 255, 47); }
+        #divazia5   { border-color: rgb(16, 255, 175); }
+        #divazia6   { border-color: rgb(47, 255, 255); }
+        #divazia7   { border-color: rgb(47, 154, 255); }
+        #divazia8   { border-color: rgb(47, 78, 255); } 
+        #divazia9   { border-color: rgb(109, 47, 255); }
+        #divazia10  { border-color: rgb(248, 47, 255); }
+    </style> 
+
+    <script>
+        const circles = document.querySelectorAll('.circle');
+
+circles.forEach(circle => {
+    circle.addEventListener('click', () => {
+        const borderColor = window.getComputedStyle(circle).borderColor;
+
+        if (circle.classList.contains('ativo')) {
+            circle.style.background = "linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 49%)";
+            circle.classList.remove('ativo');
+        } else {
+            circle.style.background = borderColor;
+            circle.classList.add('ativo');
+        }
+
+        // Obtém o ID do áudio associado a essa div
+        const somId = circle.getAttribute('data-audio');
+        const som = document.getElementById(somId);
+
+        if (som) {
+            som.currentTime = 0;
+            som.play();
+        }
+            });
+        });
+    </script>
+</body>
+</html>
