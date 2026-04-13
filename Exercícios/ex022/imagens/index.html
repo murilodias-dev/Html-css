@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando Backgrounds</title> 
+
+    <style> 
+        body{ 
+            height: 100vh;
+            background: black url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png') center center no-repeat fixed; 
+            background-size: 100px;   
+        }
+        div#q1 {
+            background-color: cadetblue;
+        } 
+
+        div#q2{
+            background: linear-gradient(to bottom, rgb(238, 255, 0), rgb(223, 201, 6), rgb(201, 155, 3));
+        } 
+
+        div#q3{ 
+            background: white url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg') center center no-repeat scroll;
+            background-size: 350px;
+        }
+
+        div.quadrado{
+            margin: 5px;
+            width: 200px; 
+            height: 200px; 
+            display: inline-block;  
+            background-color: lightgray; 
+            border: 2px solid black;
+            border-radius: 20px;
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div> 
+    <div class="quadrado" id="q2"></div> 
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
