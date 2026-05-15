@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+             border-radius: 1px solid black;
+             border-collapse: collapse; 
+        }
+
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th{
+            background-color: gray; color:
+            white;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* Class Sexo class=""*/
+        .masc{
+            background-color: rgb(21, 113, 199);
+            color: white;
+        }
+
+        .fem{
+            background-color: rgb(179, 28, 171);
+            color: white;
+        }
+
+        /* Class Colunas */
+
+        .cnome{
+            width: 150px; 
+        }
+
+        .csexo{
+            width: 50px;
+        }
+
+        .cidade{
+            width: 100px;
+        }
+
+        .cprof{
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+         
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th> 
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Clara Beatriz</td>
+            <td class="fem">F</td>
+            <td>20 anos</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td>Luiza Carvalho</td>
+            <td class="fem">F</td>
+            <td>21 anos</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td>Fabricio Almeida</td>
+            <td class="masc">M</td>
+            <td>25 anos</td>
+            <td>Ministro</td>
+        </tr>
+        
+        <tr>
+            <td>Antonio Neto</td>
+            <td class="masc">M</td>
+            <td>30 anos</td>
+            <td>Engenheiro</td>
+        </tr>
+
+        <tr>
+            <td>Mia Freitas</td>
+            <td class="fem">F</td>
+            <td>26 anos</td>
+            <td>Delegada</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td class="masc">M</td>
+            <td>16 anos</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td class="masc">M</td>
+            <td>35 anos</td>
+            <td>Advogado</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td class="fem">F</td>
+            <td>40 anos</td>
+            <td>Médica</td>
+        </tr>
+    </table>
+</body>
+</html>
