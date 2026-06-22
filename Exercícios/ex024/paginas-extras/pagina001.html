@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head> 
+    <style> 
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        table{
+            height: 800px;
+            border: 1px solid black;
+            border-collapse: collapse;  
+            font-family: Arial, Helvetica, sans-serif;     
+        }
+
+
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+<body>
+    <table>
+        <caption>Lista de Jogos Favoritos</caption>
+        <thead>
+            <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="colgroup" colspan="3">Jogos</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                    <th scope="rowgroup" rowspan="3">Mulheres</th>
+                    <td>Clara Beatriz</td>
+                    <td>Silent Hill</td>
+                    <td>Pragmata</td>
+                    <td>Fall Guys</td>
+            </tr>
+            <tr>
+                    <td>Luiza Carvalho</td>
+                    <td>Read Dead Redemption</td>
+                    <td>Silk Song</td>
+                    <td>Spider-Man 2</td>
+            </tr>
+            <tr>
+                    <td>Mia Freitas</td>
+                    <td>The Last of Us</td>
+                    <td>Assassin's Creed</td>
+                    <td>God of War</td>
+            </tr>
+            <tr>
+                    <th scope="rowgroup" rowspan="3">Homens</th>
+                    <td>Antonio Neto</td>
+                    <td>Resident Evil 2</td>
+                    <td>Resident Evil 4</td>
+                    <td>Resident Evil Village</td>
+            </tr>
+            <tr>
+                    <td>Carlos Silva</td>
+                    <td>Need for Speed</td>
+                    <td>Marvel Rivals</td>
+                    <td>Super Mario Odyssey</td>
+            </tr>
+            <tr>
+                    <td>Alex Santos</td>
+                    <td>Phoenix Attorney</td>
+                    <td>Undertale</td>
+                    <td>Uncharted 4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
