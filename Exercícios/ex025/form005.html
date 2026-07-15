@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+</head>
+<body>
+    <form action=""> 
+        <fieldset>
+            <legend>Sexo</legend>
+            <p><input type="radio" id="imasculino" name="sexo" value="masculino">
+            <label for="imasculino">Masculino</label></p>
+            <p><input type="radio" id="ifeminino" name="sexo" value="feminino">
+            <label for="ifeminino">Feminino</label></p>
+        </fieldset>
+
+
+        <fieldset> 
+            <legend>Dados Pessoais</legend>
+            <p><label for="inome">Nome:</label></p>
+            <p><input type="text" id="inome" name="nome" placeholder="Nome Completo" minlength="2" maxlength="30" required></p>
+            
+            <p><input type="checkbox" id="ifutebol" name="esportes" value="futebol">
+            <label for="ifutebol">Futebol</label></p>
+            <p><input type="checkbox" id="ibasquete" name="esportes" value="basquete">
+            <label for="ibasquete">Basquete</label></p>
+            <p><input type="checkbox" id="ivoley" name="esportes" value="voley">
+            <label for="ivoley">Voley</label></p>
+
+            <p><input type="submit" id="isubmit" value="Enviar"></p>
+            <p><input type="reset" id="ireset" value="Limpar"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
