@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 9</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <p>
+        <label for="inum">Em que ano você nasceu? </label>
+        <input type="range" id="inum" min="1926" value="2026" max="2026" oninput="ival.innerHTML = Number(inum.value)"> 
+        <output id="ival">2026</output> 
+    </p> 
+
+        <button onclick="idade()">Ver idade</button> 
+        <output id="res"></output>
+
+
+    <script>
+        function idade(){
+        let atual = new Date().getFullYear();
+        let ano = document.getElementById("inum");
+        let resultado = document.getElementById("res");
+
+        const idade = Number(atual) - Number(ano.value);
+
+        resultado.innerHTML = "Você tem " + idade + " anos"; 
+        
+    
+    } 
+
+    </script>
+</body>
+</html>
