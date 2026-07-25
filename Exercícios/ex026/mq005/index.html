@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css">
     <title>Projeto</title>
 </head>
 <body> 
     <header>
         <h1>Meu site</h1>
-        <menu>
-            <ul>
+         <i id="burguer" class="material-symbols-outlined" onclick="burguer()">menu</i>
+        
+        
+         <nav id="menu">
+            <ul>  
                 <li><a href="">Sobre</a></li>
                 <li><a href="">Contatos</a></li>
                 <li><a href="">Registrar-se</a></li>
                 <li><a href="">Ajuda</a></li>
             </ul>
-        </menu>
+        </nav>
     </header> 
 
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
+            <h2>Testando Media Queries</h2> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eum ipsam quidem mollitia eius itaque fugiat possimus fuga voluptatem! Quidem dignissimos architecto sint voluptates laborum unde rem dicta dolorum veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis adipisci expedita fugiat, recusandae saepe sed, fugit laudantium reprehenderit quaerat enim corrupti. Dicta harum laudantium ullam molestias quisquam. Non, itaque in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta explicabo debitis quibusdam corporis totam, et vitae, aperiam eveniet quos dicta eaque officia vel impedit voluptate nisi, perferendis facere. Distinctio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, distinctio aliquam rerum atque vitae quibusdam perferendis, asperiores animi dolores blanditiis quia repellendus, tempora adipisci ipsum sequi cupiditate! Libero, necessitatibus asperiores.</p>
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit eveniet minima numquam nesciunt necessitatibus mollitia facilis quia ipsum adipisci. Magnam quas nostrum quidem cum consectetur explicabo mollitia consequuntur numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque ratione praesentium eum possimus accusantium mollitia officia, facere, dolorum voluptatibus quaerat nemo veniam ut ipsum alias sit ex excepturi beatae.
@@ -29,5 +33,16 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur hic nobis quas laboriosam veniam praesentium! Recusandae dolores similique molestiae ullam, porro voluptatum, velit quidem odit iste, fuga expedita quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui explicabo iste rerum recusandae at culpa eaque distinctio reiciendis, facilis saepe cumque labore laudantium eveniet dicta non nulla excepturi quisquam!</p>
         </article>
     </main>
+
+    <script>
+      function burguer(){ 
+        let menu = document.getElementById("menu")
+
+        
+
+        menu.classList.toggle('ativo');
+        
+    }
+    </script>
 </body>
 </html>

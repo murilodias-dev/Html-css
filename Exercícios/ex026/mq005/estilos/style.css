@@ -19,15 +19,34 @@ header > h1{
     text-align: center;
 }
 
-menu{
+#menu{
+    display: none; 
+} 
+
+#menu.ativo{
     display: block;
 }
 
-menu > ul{
+i#burguer{
+    background-color: rgb(65, 64, 64);
+    color: white;
+    display: block;
+    text-align: center; 
+    padding: 10px;
+    cursor: pointer;
+} 
+
+i#burguer:hover{
+    background-color: white;
+    color: black;
+    transition: ease 0.5s;
+}
+
+#menu > ul{
     list-style-type: none;
 }
 
-menu > ul > li > a{
+#menu > ul > li > a{
     display: block; 
     padding: 10px; 
     text-decoration: none; 
@@ -37,7 +56,7 @@ menu > ul > li > a{
     border-top: 2px solid gray;
 } 
 
-menu > ul > li > a:hover{ 
+#menu > ul > li > a:hover{ 
     background-color: gray;
 } 
 
