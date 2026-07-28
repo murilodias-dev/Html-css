@@ -1,0 +1,99 @@
+@charset 'UTF-8';
+
+
+/* Typical Device Breakpoints
+
+- Mobile: 320px to 480px
+
+- Tablets / Small Laptops: 768px to 1024px
+
+- Standard Desktops: 1200px and up */  
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+
+body{ 
+
+    min-height: 100vh;
+    width: 100vw; 
+
+/*          Alinhamento Verticalm e Horizontalm              */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+/*                 Imagem para celular                      */
+    background-image: url(../imagens/Montanha-celular.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;   
+} 
+
+main h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px; 
+    margin-bottom: 30px; 
+
+    color:  rgba(255, 255, 255, 0.849); 
+    text-shadow: 1px 1px 1px gray;
+}
+
+ul{
+    padding: 20px 130px 0px 0px;   
+}
+
+a{
+    color: rgb(68, 66, 66); 
+}
+
+a:hover{
+    color: rgb(88, 86, 86)
+}
+
+main{ 
+    
+    background-color: rgba(240, 233, 233, 0.384); 
+    border-radius: 20px;
+    backdrop-filter: blur(5px); 
+    
+    padding: 20px;
+
+    height: 300px; 
+    width: 75%; 
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  
+} 
+
+
+input, button{
+    width: 80%; 
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+.box{ 
+    background-color: rgba(255, 255, 255, 0); 
+    border: none;
+    box-shadow:  0px 1px 3px black;
+
+    height: 15px;
+
+    margin-bottom: 15px;
+} 
+
+.ebox{
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgba(53, 52, 52, 0.712);
+
+    border: none;
+    box-shadow:  0px 1px 3px black;
+
+    height: 30px;
+}
