@@ -45,7 +45,7 @@ ul{
     padding: 20px 130px 0px 0px;   
 }
 
-a{
+a{  
     color: rgb(68, 66, 66); 
 }
 
@@ -64,6 +64,8 @@ main{
     height: 300px; 
     width: 75%; 
 
+    max-width: 500px;
+
     display: flex;
     flex-direction: column;
 
@@ -75,7 +77,9 @@ main{
 input, button{
     width: 80%; 
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10px;  
+
+    max-width: 400px;
 }
 
 .box{ 
@@ -89,11 +93,15 @@ input, button{
 } 
 
 .ebox{
-    background-color: rgba(255, 255, 255, 0); 
+    background-color: rgba(233, 209, 143, 0.034); 
     color: rgba(53, 52, 52, 0.712);
 
     border: none;
     box-shadow:  0px 1px 3px black;
 
     height: 30px;
+}
+
+.ebox:hover{
+    background-color: rgba(131, 128, 124, 0.26);
 }
