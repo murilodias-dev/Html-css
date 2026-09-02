@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media-query.css" media="screen and (max-width: 768px)"> <!-- Media Query -->
+    <title>Projeto Flex</title>
+
+    <style> 
+        @import url('https://googleapis.com');
+
+        *{
+            margin: 0px; 
+            padding: 0px;
+        } 
+
+
+        :root{
+            --fontitle: 'Inter', sans-serif; 
+        }
+
+        body{
+            background-color: gainsboro;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        header > div.container{
+            background-color: gray;
+            width: 100vw;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header > div.container > h1{
+            color: white;
+            text-shadow: -2px 1px 2px black;
+            margin-bottom: 10px; 
+            padding: 10px;
+
+
+            font-family: var(--fontitle);
+        }   
+        
+        header > div.container > nav {
+            display: flex;
+        }
+
+         header > div.container > nav > ul{  
+            list-style-type: none;
+         }
+
+        header > div.container > nav > ul > li > a { 
+            text-decoration: none;
+            background-color: black;
+            color: rgba(255, 255, 255, 0.582);
+            padding: 4px;
+            border-radius: 5px;
+            margin: 0px 2.5px 10px 10px;
+        }
+
+        main > div.container{
+            background-color: white;
+            box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.342);
+            padding: 10px; 
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body> 
+    <header> 
+        <div class="container">
+            <h1>Meu Site</h1>
+            <nav>
+                <ul class="container">
+                    <li>
+                        <a href="">
+                            Opção 1
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            Opção 2
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            Opção 3
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            Opção 4
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            Opção 5
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            Opção 6
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Teste de Flebox</h2> 
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus doloremque debitis alias odio sunt, nesciunt pariatur maiores praesentium. Nulla libero atque nihil dolorem placeat necessitatibus optio nesciunt, sed tenetur temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat, consequatur voluptatem exercitationem ipsam quae, soluta adipisci cum perspiciatis, optio amet expedita. Maxime fugit nam eum. Inventore eum sequi pariatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus velit impedit cum omnis earum architecto at, delectus nesciunt ad laboriosam maiores facilis ea culpa quidem nam sit ullam amet?</p> 
+        </div>
+    </main>
+
+    <footer>
+        <!---->
+    </footer>
+    
+</body>
+</html>
